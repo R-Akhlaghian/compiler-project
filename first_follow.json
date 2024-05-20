@@ -1,0 +1,242 @@
+[
+ {
+  "Non-Terminal": "Additive-expression",
+  "First": "( + - ID NUM",
+  "Follow": ") , ; ]"
+ },
+ {
+  "Non-Terminal": "Additive-expression-prime",
+  "First": "( * + - EPSILON",
+  "Follow": ") , ; < == ]"
+ },
+ {
+  "Non-Terminal": "Additive-expression-zegond",
+  "First": "( + - NUM",
+  "Follow": ") , ; < == ]"
+ },
+ {
+  "Non-Terminal": "Addop",
+  "First": "+ -",
+  "Follow": "( + - ID NUM"
+ },
+ {
+  "Non-Terminal": "Arg-list",
+  "First": "( + - ID NUM",
+  "Follow": ")"
+ },
+ {
+  "Non-Terminal": "Arg-list-prime",
+  "First": " ,EPSILON",
+  "Follow": ")"
+ },
+ {
+  "Non-Terminal": "Args",
+  "First": "( + - ID NUM EPSILON",
+  "Follow": ")"
+ },
+ {
+  "Non-Terminal": "B",
+  "First": "( * + - < = == [ EPSILON",
+  "Follow": ") , ; ]"
+ },
+ {
+  "Non-Terminal": "C",
+  "First": "< == EPSILON",
+  "Follow": ") , ; ]"
+ },
+ {
+  "Non-Terminal": "Compound-stmt",
+  "First": "{",
+  "Follow": "$ ( + - ; ID NUM break else endif for if int return void { }"
+ },
+ {
+  "Non-Terminal": "D",
+  "First": "+ - EPSILON",
+  "Follow": ") , ; < == ]"
+ },
+ {
+  "Non-Terminal": "Declaration",
+  "First": "int void",
+  "Follow": "$ ( + - ; ID NUM break for if int return void { }"
+ },
+ {
+  "Non-Terminal": "Declaration-initial",
+  "First": "int void",
+  "Follow": "( ) , ; ["
+ },
+ {
+  "Non-Terminal": "Declaration-list",
+  "First": "int void EPSILON",
+  "Follow": "$ ( + - ; ID NUM break for if return { }"
+ },
+ {
+  "Non-Terminal": "Declaration-prime",
+  "First": "( ; [",
+  "Follow": "$ ( + - ; ID NUM break for if int return void { }"
+ },
+ {
+  "Non-Terminal": "Else-stmt",
+  "First": "else endif",
+  "Follow": "( + - ; ID NUM break else endif for if return { }"
+ },
+ {
+  "Non-Terminal": "Expression",
+  "First": "( + - ID NUM",
+  "Follow": ") , ; ]"
+ },
+ {
+  "Non-Terminal": "Expression-stmt",
+  "First": "( + - ; ID NUM break",
+  "Follow": "( + - ; ID NUM break else endif for if return { }"
+ },
+ {
+  "Non-Terminal": "Factor",
+  "First": "( ID NUM",
+  "Follow": ") * + , - ; < == ]"
+ },
+ {
+  "Non-Terminal": "Factor-prime",
+  "First": "( EPSILON",
+  "Follow": ") * + , - ; < == ]"
+ },
+ {
+  "Non-Terminal": "Factor-zegond",
+  "First": "( NUM",
+  "Follow": ") * + , - ; < == ]"
+ },
+ {
+  "Non-Terminal": "Fun-declaration-prime",
+  "First": "(",
+  "Follow": "$ ( + - ; ID NUM break for if int return void { }"
+ },
+ {
+  "Non-Terminal": "G",
+  "First": "* EPSILON",
+  "Follow": ") + , - ; < == ]"
+ },
+ {
+  "Non-Terminal": "H",
+  "First": "* + - < = == EPSILON",
+  "Follow": ") , ; ]"
+ },
+ {
+  "Non-Terminal": "Iteration-stmt",
+  "First": "for",
+  "Follow": "( + - ; ID NUM break else endif for if return { }"
+ },
+ {
+  "Non-Terminal": "Param",
+  "First": "int void",
+  "Follow": ") ,"
+ },
+ {
+  "Non-Terminal": "Param-list",
+  "First": " ,EPSILON",
+  "Follow": ")"
+ },
+ {
+  "Non-Terminal": "Param-prime",
+  "First": "[ EPSILON",
+  "Follow": ") ,"
+ },
+ {
+  "Non-Terminal": "Params",
+  "First": "int void",
+  "Follow": ")"
+ },
+ {
+  "Non-Terminal": "Program",
+  "First": "int void EPSILON",
+  "Follow": "$"
+ },
+ {
+  "Non-Terminal": "Relop",
+  "First": "< ==",
+  "Follow": "( + - ID NUM"
+ },
+ {
+  "Non-Terminal": "Return-stmt",
+  "First": "return",
+  "Follow": "( + - ; ID NUM break else endif for if return { }"
+ },
+ {
+  "Non-Terminal": "Return-stmt-prime",
+  "First": "( + - ; ID NUM",
+  "Follow": "( + - ; ID NUM break else endif for if return { }"
+ },
+ {
+  "Non-Terminal": "Selection-stmt",
+  "First": "if",
+  "Follow": "( + - ; ID NUM break else endif for if return { }"
+ },
+ {
+  "Non-Terminal": "Signed-factor",
+  "First": "( + - ID NUM",
+  "Follow": ") * + , - ; < == ]"
+ },
+ {
+  "Non-Terminal": "Signed-factor-prime",
+  "First": "( EPSILON",
+  "Follow": ") * + , - ; < == ]"
+ },
+ {
+  "Non-Terminal": "Signed-factor-zegond",
+  "First": "( + - NUM",
+  "Follow": ") * + , - ; < == ]"
+ },
+ {
+  "Non-Terminal": "Simple-expression-prime",
+  "First": "( * + - < == EPSILON",
+  "Follow": ") , ; ]"
+ },
+ {
+  "Non-Terminal": "Simple-expression-zegond",
+  "First": "( + - NUM",
+  "Follow": ") , ; ]"
+ },
+ {
+  "Non-Terminal": "Statement",
+  "First": "( + - ; ID NUM break for if return {",
+  "Follow": "( + - ; ID NUM break else endif for if return { }"
+ },
+ {
+  "Non-Terminal": "Statement-list",
+  "First": "( + - ; ID NUM break for if return { EPSILON",
+  "Follow": "}"
+ },
+ {
+  "Non-Terminal": "Term",
+  "First": "( + - ID NUM",
+  "Follow": ") + , - ; < == ]"
+ },
+ {
+  "Non-Terminal": "Term-prime",
+  "First": "( * EPSILON",
+  "Follow": ") + , - ; < == ]"
+ },
+ {
+  "Non-Terminal": "Term-zegond",
+  "First": "( + - NUM",
+  "Follow": ") + , - ; < == ]"
+ },
+ {
+  "Non-Terminal": "Type-specifier",
+  "First": "int void",
+  "Follow": "ID"
+ },
+ {
+  "Non-Terminal": "Var-declaration-prime",
+  "First": "; [",
+  "Follow": "$ ( + - ; ID NUM break for if int return void { }"
+ },
+ {
+  "Non-Terminal": "Var-call-prime",
+  "First": "( [ EPSILON",
+  "Follow": ") * + , - ; < == ]"
+ },
+ {
+  "Non-Terminal": "Var-prime",
+  "First": "[ EPSILON",
+  "Follow": ") * + , - ; < == ]"
+ }
+]

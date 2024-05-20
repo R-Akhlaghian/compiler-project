@@ -1,0 +1,241 @@
+{
+  "alphabet": [
+    "d",
+    "a",
+    "s",
+    "=",
+    "*",
+    "/",
+    "w",
+    "_"
+  ],
+  "states": [
+    {
+      "id": 0,
+      "name": "0",
+      "coord": {
+        "x": 134,
+        "y": 74
+      },
+      "radius": 20,
+      "end": false,
+      "start": true
+    },
+    {
+      "id": 1,
+      "name": "num",
+      "coord": {
+        "x": 390,
+        "y": 200
+      },
+      "radius": 20,
+      "end": true,
+      "start": false
+    },
+    {
+      "id": 2,
+      "name": "id",
+      "coord": {
+        "x": 273,
+        "y": 253
+      },
+      "radius": 20,
+      "end": true,
+      "start": false
+    },
+    {
+      "id": 3,
+      "name": "sym",
+      "coord": {
+        "x": 165,
+        "y": 275
+      },
+      "radius": 20,
+      "end": true,
+      "start": false
+    },
+    {
+      "id": 4,
+      "name": "ws",
+      "coord": {
+        "x": 58,
+        "y": 301
+      },
+      "radius": 20,
+      "end": true,
+      "start": false
+    },
+    {
+      "id": 5,
+      "name": "5",
+      "coord": {
+        "x": 310,
+        "y": 37
+      },
+      "radius": 20,
+      "end": false,
+      "start": false
+    },
+    {
+      "id": 6,
+      "name": "eq",
+      "coord": {
+        "x": 276,
+        "y": 359
+      },
+      "radius": 20,
+      "end": true,
+      "start": false
+    },
+    {
+      "id": 7,
+      "name": "7",
+      "coord": {
+        "x": 426,
+        "y": 42
+      },
+      "radius": 20,
+      "end": false,
+      "start": false
+    },
+    {
+      "id": 8,
+      "name": "8",
+      "coord": {
+        "x": 508,
+        "y": 111
+      },
+      "radius": 20,
+      "end": false,
+      "start": false
+    },
+    {
+      "id": 9,
+      "name": "com",
+      "coord": {
+        "x": 502,
+        "y": 190
+      },
+      "radius": 20,
+      "end": true,
+      "start": false
+    }
+  ],
+  "transitions": [
+    {
+      "id": 0,
+      "state_src_id": 0,
+      "state_dst_id": 1,
+      "symbols": [
+        "d"
+      ]
+    },
+    {
+      "id": 1,
+      "state_src_id": 0,
+      "state_dst_id": 2,
+      "symbols": [
+        "a"
+      ]
+    },
+    {
+      "id": 2,
+      "state_src_id": 2,
+      "state_dst_id": 2,
+      "symbols": [
+        "d",
+        "a"
+      ]
+    },
+    {
+      "id": 3,
+      "state_src_id": 1,
+      "state_dst_id": 1,
+      "symbols": [
+        "d"
+      ]
+    },
+    {
+      "id": 4,
+      "state_src_id": 0,
+      "state_dst_id": 3,
+      "symbols": [
+        "s",
+        "=",
+        "*"
+      ]
+    },
+    {
+      "id": 5,
+      "state_src_id": 0,
+      "state_dst_id": 4,
+      "symbols": [
+        "w"
+      ]
+    },
+    {
+      "id": 6,
+      "state_src_id": 4,
+      "state_dst_id": 4,
+      "symbols": [
+        "w"
+      ]
+    },
+    {
+      "id": 7,
+      "state_src_id": 0,
+      "state_dst_id": 5,
+      "symbols": [
+        "/"
+      ]
+    },
+    {
+      "id": 8,
+      "state_src_id": 3,
+      "state_dst_id": 6,
+      "symbols": [
+        "="
+      ]
+    },
+    {
+      "id": 9,
+      "state_src_id": 5,
+      "state_dst_id": 7,
+      "symbols": [
+        "*"
+      ]
+    },
+    {
+      "id": 10,
+      "state_src_id": 7,
+      "state_dst_id": 7,
+      "symbols": [
+        "_"
+      ]
+    },
+    {
+      "id": 11,
+      "state_src_id": 7,
+      "state_dst_id": 8,
+      "symbols": [
+        "*"
+      ]
+    },
+    {
+      "id": 12,
+      "state_src_id": 8,
+      "state_dst_id": 9,
+      "symbols": [
+        "/"
+      ]
+    },
+    {
+      "id": 13,
+      "state_src_id": 8,
+      "state_dst_id": 7,
+      "symbols": [
+        "_"
+      ]
+    }
+  ]
+}
